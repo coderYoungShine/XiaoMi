@@ -1,0 +1,32 @@
+.w {
+  width: 1226px;
+  margin: 0 auto;
+}
+.footer {
+  height: 330px;
+}
+.footer-service ul {
+  padding: 27px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.footer-service ul li {
+  float: left;
+  width: 19.8%;
+  height: 25px;
+  border-left: 1px solid #e0e0e0;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+.footer-service .first {
+  border: 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-content ul li {
+  color: #757575;
+  line-height: 30px;
+  font-size: 16px;
+}

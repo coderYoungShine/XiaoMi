@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>确认订单</title>
+    <link rel="stylesheet" href="./css/pc_common.css">
+    <link rel="stylesheet" href="./css/address.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <div class="address-top-w">
+        <div class="address-top w">
+            <h1><a href="./index.html"><img src="./images/log.png" alt=""></a></h1>
+            <span>确认订单</span>
+            <div class="user">
+                <span class="username">
+                    用户名
+                    <div class="logged-out" style="display: none;">
+                        退出
+                    </div>
+                </span>
+                <i>|</i>
+                <span>我的订单</span>
+            </div>
+        </div>
+    </div>
+    <div class="address-middle-w">
+        <div class="address-middle w">
+            <div class="detail-address">
+                <p>
+                    <span>收货地址</span>
+                    <i>|</i>
+                    <span>大型商品下单后，收货地址将无法修改。</span>
+                    <span>快递公司会电话联系您确认送货时间，收货时需核对身份证信息。</span>
+                </p>
+                <ul class="addressInfo">
+                    <!-- <li>
+                        <div class="addressDiv">
+                            <div class="clear">
+                                <span>姓名</span>
+                                <span>地址标签</span>
+                            </div>
+                            <div>电话号码</div>
+                            <div>
+                                <p>省市区地址</p>
+                                <p>详细地址</p>
+                            </div>
+                            <button class="change">修改</button>
+                        </div>
+
+                    </li> -->
+                    <li class="addNew">
+                        添加新地址
+                    </li>
+                </ul>
+            </div>
+
+            <div class="goodsection">
+                <p>商品及优惠券</p>
+                <div>
+                    <img src="./images/list/list_1.png" alt="">
+                    <span class="goodsname">商品名称</span>
+                    <span class="goodsprice">
+                        <span> 商品单价 </span>
+                        X
+                        <span> n </span>
+                    </span>
+                    <span class="subtotal">小计元</span>
+                </div>
+                <div>
+                    <img src="./images/list/list_1.png" alt="">
+                    <span class="goodsname">商品名称</span>
+                    <span class="goodsprice">
+                        <span> 商品单价 </span>
+                        X
+                        <span> n </span>
+                    </span>
+                    <span class="subtotal">小计元</span>
+                </div>
+                <div>
+                    <img src="./images/list/list_1.png" alt="">
+                    <span class="goodsname">商品名称</span>
+                    <span class="goodsprice">
+                        <span> 商品单价 </span>
+                        X
+                        <span> n </span>
+                    </span>
+                    <span class="subtotal">小计元</span>
+                </div>
+            </div>
+
+            <div class="trans">
+                <span>配送方式</span>
+                <span>包邮</span>
+            </div>
+            <div class="fapiao">
+                <span>发票</span>
+                <span>
+                    <span>电子普通发票</span>
+                    <span>个人</span>
+                    <span>商品明细</span>
+                </span>
+            </div>
+
+            <div class="count clear">
+                <div class="left">
+                    <p> + 使用优惠券</p>
+                    <p> + 使用小米礼品卡</p>
+                </div>
+                <div class="right">
+                    <div>
+                        <div>商品件数 :</div>
+                        <div> <span class="totalCount">xx</span> 件</div>
+                    </div>
+                    <div>
+                        <div>商品总价 :</div>
+                        <div> <span class="totalPrice"></span> 元</div>
+                    </div>
+                    <div>
+                        <div>活动优惠 :</div>
+                        <div>-0元</div>
+                    </div>
+                    <div>
+                        <div>优惠券折扣 :</div>
+                        <div>-0元</div>
+                    </div>
+                    <div>
+                        <div>运费 :</div>
+                        <div>0元</div>
+                    </div>
+                    <div>
+                        <div>总计 :</div>
+                        <div> <span class="finalPrice">xx</span> 元</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="countfooter clear">
+                <div class="buy">结算</div>
+                <div class="back">返回购物车</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shadow" style="display: none;">
+        <div class="shadow-box">
+            <div class="shadow-head">
+                添加收货地址
+            </div>
+            <div class="shadow-body">
+                <div class="info">
+                    <input type="text" placeholder="姓名" class="name" autocomplete="off">
+                    <input type="text" placeholder="电话号码" class="tel" autocomplete="off">
+                </div>
+                <div class="address">
+                    <input type="text" placeholder="选择省/市/区/街道" autocomplete="off" class="pop">
+                    <div class="address-select" style="display: none;">
+                        <i class="close">X</i>
+                        <div class="select-box">
+                            <div class="address-ssq clear">
+                                <div class="ssq-selected">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="unselect">请选择省份</div>
+                            </div>
+                            <div>
+                                <div class="address-prov address-list">
+                                    <span data-id="henan">河南</span>
+                                    <span data-id="hubei">湖北</span>
+                                </div>
+                                <div class="address-city address-list hubei" style="display: none;">
+                                    <span data-id="wuhan">武汉</span>
+                                    <span data-id="huangshi">黄石</span>
+
+                                </div>
+
+                                <div class="address-city address-list henan" style="display: none;">
+                                    <span data-id="zhengzhou">郑州</span>
+
+                                    <span data-id="shangqiu">商丘</span>
+
+                                </div>
+                                <div class="address-area address-list wuhan" style="display: none;">
+                                    <span>洪山区</span>
+                                    <span>江夏区</span>
+                                    <span>江岸区</span>
+                                    <span>汉口</span>
+                                    <span>汉阳</span>
+                                    <span>黄陂</span>
+                                    <span>新洲</span>
+                                    <span>东西湖</span>
+                                </div>
+                                <div class="address-area address-list huangshi" style="display: none;">
+                                    <span>黄石港区</span>
+                                    <span>西塞山区</span>
+                                    <span>下陆区</span>
+                                    <span>铁山区</span>
+                                </div>
+                                <div class="address-area address-list zhengzhou" style="display: none;">
+                                    <span>中原区</span>
+                                    <span>二七区</span>
+                                    <span>管城回族区</span>
+                                    <span>金水区</span>
+                                    <span>上街区</span>
+                                    <span>惠济区</span>
+                                </div>
+                                <div class="address-area address-list shangqiu" style="display: none;">
+                                    <span>宁陵县</span>
+                                    <span>柘城</span>
+                                    <span>民权</span>
+                                    <span>睢县</span>
+                                    <span>虞城</span>
+                                    <span>夏邑</span>
+
+                                </div>
+                            </div>
+
+                            <div class="address-search">
+                                搜索地址快速定位
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="detailAdd">
+                    <input type="text" placeholder="详细地址" autocomplete="off" class="detailAddInput">
+                </div>
+                <div class="addTag">
+                    <input type="text" placeholder="地址标签" autocomplete="off" class="addTagInput">
+                </div>
+            </div>
+            <div class="shadow-foot">
+                <button class="confirm">确定</button>
+                <button class="cancel">取消</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer w">
+        <div class="footer-service">
+            <ul class="clear">
+                <li class="first">预约维修服务</li>
+                <li>7天无理由退货</li>
+                <li>15天免费退换</li>
+                <li>满69包邮</li>
+                <li>520余家售后</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <ul>
+                <li>帮助中心</li>
+                <li>账户管理</li>
+                <li>购物指南</li>
+                <li>订单操作</li>
+            </ul>
+            <ul>
+                <li>帮助中心</li>
+                <li>账户管理</li>
+                <li>购物指南</li>
+                <li>订单操作</li>
+            </ul>
+            <ul>
+                <li>帮助中心</li>
+                <li>账户管理</li>
+                <li>购物指南</li>
+                <li>订单操作</li>
+            </ul>
+            <ul>
+                <li>帮助中心</li>
+                <li>账户管理</li>
+                <li>购物指南</li>
+                <li>订单操作</li>
+            </ul>
+            <ul>
+                <li>帮助中心</li>
+                <li>账户管理</li>
+                <li>购物指南</li>
+                <li>订单操作</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/address.js" type="module"></script>
+
+</body>
+
+</html>

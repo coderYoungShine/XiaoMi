@@ -1,0 +1,179 @@
+html,
+body {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 375px;
+  height: 100%;
+  background: url(../images/login_banner.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+.content {
+  margin-left: 375px;
+  width: calc(100%-375px);
+  height: 100%;
+  overflow: hidden;
+}
+.content .header {
+  height: 80px;
+  line-height: 80px;
+  width: 100%;
+  /* background-color: pink; */
+}
+
+.content .header img {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.content .header p {
+  float: left;
+}
+
+.header ul {
+  float: right;
+  padding: 0 20px;
+}
+.header ul li {
+  float: left;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 14px;
+  color: #838383;
+}
+.box {
+  width: 450px;
+  height: 600px;
+  padding: 40px 45px;
+  box-shadow: 0 20px 50px 0 hsl(0deg 0% 64% / 10%);
+
+  margin: 100px auto;
+}
+
+.top {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.top span {
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.box .middle > div {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.username,
+.usertel {
+  margin-bottom: 40px;
+}
+.userpwd,
+.usercode {
+  position: relative;
+  margin-bottom: 20px;
+}
+.box .middle > div input {
+  width: 100%;
+  height: 60px;
+  padding: 10px 20px 10px;
+  border: none;
+  font-size: 17px;
+  color: #333;
+  line-height: 20px;
+  background: rgba(0, 0, 0, 0);
+}
+.box .middle .login,
+.box .middle .reg {
+  text-align: center;
+  font-size: 20px;
+  color: #f5f5f5;
+  background-color: #ffbe99;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.box .middle .getcode {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #ff5c00;
+  border: none;
+  background-color: #fff;
+}
+
+.sub {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #ff5c00;
+}
+.sub p .fogPwd {
+  cursor: pointer;
+  float: left;
+}
+
+.sub p .telLog {
+  cursor: pointer;
+  float: right;
+}
+
+.others {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.others p {
+  font-size: 16px;
+  color: #838383;
+}
+
+.others div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.others div em {
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: skyblue;
+  margin: 0 20px;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.others div em:nth-of-type(1) {
+  background-color: #18acfc;
+}
+.others div em:nth-of-type(2) {
+  background-color: #50b674;
+}
+.others div em:nth-of-type(3) {
+  background-color: #ea5d5c;
+}
+.others div em:nth-of-type(4) {
+  background-color: #1989fa;
+}
